@@ -16,9 +16,7 @@
             "method": "quartile"
         },
         "tests": {
-            "expect_lt": [
-                    [0.05, "Sine wave has non-negligible bandwidth"]
-                ]
+            "expect_lt": 0.05
         }
     },
     
@@ -38,9 +36,7 @@
             "method": "quartile"
         },
         "tests": {
-            "expect_gt": [
-                    [0, "Sine wave has negative bandwidth"]
-                ]
+            "expect_gt": 0
         }
     }
 }
