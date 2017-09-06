@@ -2,14 +2,14 @@
     "test_bandwidth_of_sine_wave": {
         "desc_en": "bandwidth of a sine wave is near zero",
         "orthophonia_func": "frequencySpetcrumPowerQuartiles",
-        "r_input": {
+        "r_input": [
             "tuneR::normalize(tuneR::sine(4000)",
             0,
             FALSE
-        }
+            ]
         "tests": {
             "expect_lt": [
-                [0.05,"Sine wave has non-negligible bandwidth"]
+                    [0.05,"Sine wave has non-negligible bandwidth"]
                 ]
         }
     }
