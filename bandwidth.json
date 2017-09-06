@@ -10,7 +10,7 @@
             ],
         "tests": {
             "expect_lt": [
-                    [3,0.05,"Sine wave has non-negligible bandwidth"]
+                    [3, 0.05, "Sine wave has non-negligible bandwidth"]
                 ]
         }
     }
