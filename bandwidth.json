@@ -3,7 +3,7 @@
         "desc_en": "bandwidth of a sine wave is near zero",
         "orthophonia_func": "frequencySpectrumPowerQuartiles",
         "r_input": [
-            "tuneR::normalize(tuneR::sine(4000)",
+            "tuneR::normalize(tuneR::sine(4000))",
             0,
             false
             ],
