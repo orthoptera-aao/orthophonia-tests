@@ -6,7 +6,7 @@
         },
         "notes": {
             "en": "Bandwidth of a sine wave is 0; however there will be spreading due to frequency transform"
-        }
+        },
         "orthophonia_func": "bandwidth",
         "file_testsound": {
             "generated_by": "r_testsound",
