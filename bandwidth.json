@@ -23,7 +23,9 @@
     },
     
     "test_bandwidth_of_sine_wave_is_not_negative": {
-        "desc_en": "bandwidth should not be negative",
+        "desc": {
+            "en": "bandwidth should not be negative"
+        },
         "orthophonia_func": "bandwidth",
         "file_testsound": {
             "generated_by": "r_testsound",
