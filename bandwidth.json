@@ -6,7 +6,7 @@
             "tuneR::normalize(tuneR::sine(4000)",
             0,
             false
-            ]
+            ],
         "tests": {
             "expect_lt": [
                     [0.05,"Sine wave has non-negligible bandwidth"]
