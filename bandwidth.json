@@ -6,7 +6,7 @@
         "other_args": [
             0,
             false,
-            "str("quartile")"
+            "quartile"
             ],
         "tests": {
             "expect_lt": [
