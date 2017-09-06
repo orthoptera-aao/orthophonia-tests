@@ -1,7 +1,7 @@
 {
     "test_bandwidth_of_sine_wave": {
         "desc_en": "bandwidth of a sine wave is near zero",
-        "orthophonia_func": "orthophonia::bandwidth",
+        "orthophonia_func": "bandwidth",
         "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
         "other_args": [
             0,
