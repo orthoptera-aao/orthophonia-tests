@@ -1,6 +1,9 @@
 {
     "test_bandwidth_of_sine_wave_is_zero": {
-        "desc_en": "bandwidth of a sine wave is near zero",
+        "desc":{
+            "en": "bandwidth of a sine wave is near zero",
+            "es": "el ancho de banda de la onda senoidal es casi cero"
+        },
         "orthophonia_func": "bandwidth",
         "file_testsound": {
             "generated_by": "r_testsound",
