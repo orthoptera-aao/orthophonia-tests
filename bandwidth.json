@@ -1,5 +1,5 @@
 {
-    "test_bandwidth_of_sine_wave": {
+    "test_bandwidth_of_sine_wave_is_zero": {
         "desc_en": "bandwidth of a sine wave is near zero",
         "orthophonia_func": "bandwidth",
         "file_testsound": {
@@ -15,7 +15,24 @@
         "tests": {
             "expect_lt": [
                     [0.05, "Sine wave has non-negligible bandwidth"]
-                ],
+                ]
+        }
+    },
+    
+    "test_bandwidth_of_sine_wave_is_not_negative": {
+        "desc_en": "bandwidth should not be negative",
+        "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": "https://github.com/orthoptera-aao/orthophonia-tests/raw/master/files/theoretical/sine4000.wav"
+        },
+        "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
+        "tests": {
             "expect_gt": [
                     [0, "Sine wave has negative bandwidth"]
                 ]
