@@ -5,7 +5,7 @@
         "r_input": [
             "tuneR::normalize(tuneR::sine(4000)",
             0,
-            FALSE
+            false
             ]
         "tests": {
             "expect_lt": [
