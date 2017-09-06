@@ -3,11 +3,11 @@
         "desc_en": "bandwidth of a sine wave is near zero",
         "orthophonia_func": "bandwidth",
         "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
-        "other_args": [
-            0,
-            false,
-            "quartile"
-            ],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
         "tests": {
             "expect_lt": [
                     [0.05, "Sine wave has non-negligible bandwidth"]
