@@ -2,6 +2,10 @@
     "test_bandwidth_of_sine_wave": {
         "desc_en": "bandwidth of a sine wave is near zero",
         "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": "https://github.com/orthoptera-aao/orthophonia-tests/raw/master/files/theoretical/sine4000.wav"
+        },
         "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
         "other_args": {
             "min_freq": 0,
