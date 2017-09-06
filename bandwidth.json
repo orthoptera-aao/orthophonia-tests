@@ -50,7 +50,7 @@
         "orthophonia_func": "bandwidth",
         "file_testsound": {
             "generated_by": "r_testsound",
-            "url": ""
+            "url": "https://github.com/orthoptera-aao/orthophonia-tests/raw/master/files/theoretical/silence.wav"
         },
         "r_testsound": ["func", "tuneR::silence()"],
         "other_args": {
