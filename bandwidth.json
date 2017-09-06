@@ -41,5 +41,25 @@
         "tests": {
             "expect_gt": 0
         }
+    },
+    
+    "test_bandwidth_of_silence is NULL": {
+        "desc": {
+            "en": "bandwidth of silence should be NULL"
+        },
+        "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": ""
+        },
+        "r_testsound": ["func", "tuneR::silence()"],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
+        "tests": {
+            "expect_equal": null
+        }
     }
 }
