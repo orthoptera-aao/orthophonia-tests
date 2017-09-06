@@ -1,7 +1,17 @@
 {
-    "test_bandwidth_of_sine_wave": {
-        "desc_en": "bandwidth of a sine wave is near zero",
+    "test_bandwidth_of_sine_wave_is_zero": {
+        "desc":{
+            "en": "bandwidth of a sine wave is near zero",
+            "es": "el ancho de banda de la onda senoidal es casi cero"
+        },
+        "notes": {
+            "en": "Bandwidth of a sine wave is 0; however there will be spreading due to frequency transform"
+        },
         "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": "https://github.com/orthoptera-aao/orthophonia-tests/raw/master/files/theoretical/sine4000.wav"
+        },
         "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
         "other_args": {
             "min_freq": 0,
@@ -9,9 +19,47 @@
             "method": "quartile"
         },
         "tests": {
-            "expect_lt": [
-                    [0.05, "Sine wave has non-negligible bandwidth"]
-                ]
+            "expect_lt": 0.05
+        }
+    },
+    
+    "test_bandwidth_of_sine_wave_is_not_negative": {
+        "desc": {
+            "en": "bandwidth should not be negative"
+        },
+        "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": "https://github.com/orthoptera-aao/orthophonia-tests/raw/master/files/theoretical/sine4000.wav"
+        },
+        "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000))"],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
+        "tests": {
+            "expect_gt": 0
+        }
+    },
+    
+    "test_bandwidth_of_silence is NULL": {
+        "desc": {
+            "en": "bandwidth of silence should be NULL"
+        },
+        "orthophonia_func": "bandwidth",
+        "file_testsound": {
+            "generated_by": "r_testsound",
+            "url": ""
+        },
+        "r_testsound": ["func", "tuneR::silence()"],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
+        "tests": {
+            "expect_equal": null
         }
     }
 }
