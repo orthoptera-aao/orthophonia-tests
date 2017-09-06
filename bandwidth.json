@@ -7,7 +7,7 @@
             "testsound",
             0,
             false,
-            "quartile"
+            "str("quartile")"
             ],
         "tests": {
             "expect_lt": [
