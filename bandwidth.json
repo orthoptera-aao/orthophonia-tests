@@ -61,5 +61,21 @@
         "tests": {
             "expect_equal": null
         }
-    }
+    },
+    "test_bandwidth_of_three_superimposed_sine_waves": {
+        "desc": {
+            "en": "bandwidth is within range for sum of three sine waves"
+        },
+        "orthophonia_func": "bandwidth",
+        "r_testsound": ["func", "tuneR::normalize(tuneR::sine(4000)+tuneR::sine(6000)+tuneR::sine(8000))"],
+        "other_args": {
+            "min_freq": 0,
+            "plot": false,
+            "method": "quartile"
+        },
+        "tests": {
+            "expect_gt": 3.95,
+            "expect_lt": 4.05
+        }
+    },
 }
